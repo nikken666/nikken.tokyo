@@ -1,40 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NIKKEN AUTOMOTIVE CO., LTD.</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKKEN AUTOMOTIVE CO., LTD. | Aichi, Japan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), 
+                        url('https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+        }
+        .red-accent { color: #d62c2f; }
+        .bg-red-accent { background-color: #d62c2f; }
+    </style>
 </head>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-<body>
+    <!-- Top Utility Bar -->
+    <div class="bg-slate-950 text-white text-[10px] md:text-xs py-2 px-6 flex justify-between items-center uppercase tracking-widest">
+        <span>Aichi, Japan | Engineering Excellence Since Establishment</span>
+        <div class="hidden md:flex space-x-6">
+            <span>Global Exports</span>
+            <span>OEM Specifications</span>
+        </div>
+    </div>
 
-<header class="hero">
-  <h1>NIKKEN AUTOMOTIVE CO., LTD.</h1>
-  <p>Heavy Duty Absorber • Drive Shaft</p>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <!-- Using your provided logo -->
+                <img src="image.png" alt="NIKKEN AUTOMOTIVE" class="h-8 md:h-12">
+            </a>
+            
+            <div class="hidden lg:flex space-x-8 font-bold text-xs uppercase tracking-tighter">
+                <a href="#" class="red-accent underline decoration-2 underline-offset-8">Home</a>
+                <a href="#about" class="hover:red-accent transition">Corporate Profile</a>
+                <a href="#products" class="hover:red-accent transition">Product Range</a>
+                <a href="#tech" class="hover:red-accent transition">Quality Control</a>
+                <a href="#contact" class="hover:red-accent transition">Inquiry</a>
+            </div>
 
-  <a href="#products" class="btn">
-    View Products
-  </a>
-</header>
+            <a href="mailto:nikkenauto@gmail.com" class="bg-red-accent text-white px-4 py-2 rounded text-xs font-black hover:bg-black transition uppercase">
+                Contact Us
+            </a>
+        </div>
+    </nav>
 
-<section id="products" class="products">
-  <h2>Our Products</h2>
+    <!-- Hero Section -->
+    <header class="hero-bg h-[550px] flex items-center text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl">
+                <h2 class="text-red-500 font-black uppercase tracking-[0.2em] mb-4 text-sm">Quality from Aichi, Japan</h2>
+                <h1 class="text-4xl md:text-6xl font-black mb-6 leading-none italic uppercase">
+                    NIKKEN AUTOMOTIVE CO., LTD.
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 font-light leading-relaxed">
+                    Precision-engineered automotive components. We provide high-performance solutions for the global automotive aftermarket, maintaining the highest standards of Japanese manufacturing.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button class="bg-red-accent hover:bg-white hover:text-red-accent px-8 py-4 rounded font-black transition uppercase text-sm">Our Products</button>
+                    <button class="border-2 border-white hover:bg-white hover:text-black px-8 py-4 rounded font-black transition uppercase text-sm">Company Profile</button>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  <div class="card">
-    <h3>Heavy Duty Absorber</h3>
-    <p>High durability suspension system</p>
-  </div>
+    <!-- Brief About/Trust Section -->
+    <section class="py-16 bg-white border-b">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            <div>
+                <div class="text-red-accent text-4xl mb-4 font-black">JP</div>
+                <h4 class="font-bold uppercase mb-2">Japanese Heritage</h4>
+                <p class="text-sm text-gray-500">Founded and operated in Aichi, the heart of Japan's automotive industry.</p>
+            </div>
+            <div>
+                <div class="text-red-accent text-4xl mb-4 font-black">QC</div>
+                <h4 class="font-bold uppercase mb-2">Strict Quality</h4>
+                <p class="text-sm text-gray-500">Every component undergoes rigorous testing to meet global safety standards.</p>
+            </div>
+            <div>
+                <div class="text-red-accent text-4xl mb-4 font-black">GE</div>
+                <h4 class="font-bold uppercase mb-2">Global Export</h4>
+                <p class="text-sm text-gray-500">Reliable supply chain serving Southeast Asia and the global market.</p>
+            </div>
+        </div>
+    </section>
 
-  <div class="card">
-    <h3>Drive Shaft</h3>
-    <p>Precision engineered drivetrain component</p>
-  </div>
-</section>
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-950 text-gray-400 py-16">
+        <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-16">
+            <!-- Brand Info -->
+            <div>
+                <img src="image.png" alt="NIKKEN" class="h-10 mb-8 brightness-0 invert">
+                <p class="text-sm leading-relaxed mb-6">
+                    <strong>NIKKEN AUTOMOTIVE CO., LTD.</strong><br>
+                    Leading provider of automotive spare parts and performance upgrades.
+                </p>
+                <div class="text-white font-bold italic tracking-wider">AICHI, JAPAN</div>
+            </div>
 
-<footer>
-  <p>© 2026 NIKKEN AUTOMOTIVE CO., LTD.</p>
-</footer>
+            <!-- Quick Contact -->
+            <div>
+                <h4 class="text-white font-black uppercase mb-8 text-sm tracking-widest">Inquiries</h4>
+                <div class="space-y-4">
+                    <p class="flex flex-col">
+                        <span class="text-xs uppercase text-gray-600">Email Address:</span>
+                        <a href="mailto:nikkenauto@gmail.com" class="text-white hover:text-red-500 font-bold">nikkenauto@gmail.com</a>
+                    </p>
+                    <p class="flex flex-col">
+                        <span class="text-xs uppercase text-gray-600">Office Hours:</span>
+                        <span class="text-white">Mon - Fri: 09:00 - 18:00 (JST)</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Newsletter/Location -->
+            <div>
+                <h4 class="text-white font-black uppercase mb-8 text-sm tracking-widest">Global Headquarters</h4>
+                <p class="text-sm">
+                    Aichi Prefecture, Japan.<br>
+                    The hub of automotive technology and innovation.
+                </p>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-6 mt-16 pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest">
+            <p>© 2026 NIKKEN AUTOMOTIVE CO., LTD. ALL RIGHTS RESERVED.</p>
+            <div class="space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
